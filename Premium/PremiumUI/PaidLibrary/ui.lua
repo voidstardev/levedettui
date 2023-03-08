@@ -551,7 +551,7 @@ function Library:Create(options)
 		StartAnimation["9e"]["TextTransparency"] = 1
 		StartAnimation["9e"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
 		StartAnimation["9e"]["Size"] = UDim2.new(0, 282, 0, 70)
-		StartAnimation["9e"]["Text"] = [[Welcome, ]]..Players.LocalPlayer.Name
+		StartAnimation["9e"]["Text"] = [[Üdvözöljük, ]]..Players.LocalPlayer.Name ..[[!]]
 		StartAnimation["9e"]["Name"] = [[WelcomeText]]
 		StartAnimation["9e"]["Font"] = Enum.Font.GothamMedium
 		StartAnimation["9e"]["BackgroundTransparency"] = 1
@@ -830,7 +830,7 @@ function Library:Create(options)
 					KeySystem["ab"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
 					KeySystem["ab"]["Size"] = UDim2.new(0, 100, 0, 19)
 					KeySystem["ab"]["Name"] = [[DiscordServerButton]]
-					KeySystem["ab"]["Text"] = [[Copy discord invite]]
+					KeySystem["ab"]["Text"] = [[Discord invite másolása]]
 					KeySystem["ab"]["Font"] = Enum.Font.Gotham
 					KeySystem["ab"]["Position"] = UDim2.new(0, 104, 0, 118)
 					KeySystem["ab"]["MaxVisibleGraphemes"] = 0
@@ -902,7 +902,7 @@ function Library:Create(options)
 							task.spawn(function()
 								Library:ForceNotify({
 									Name = "Discord",
-									Text = "Copied the discord link to clipboard!",
+									Text = "Discord invite másolva!",
 									Icon = "rbxassetid://11401835376",
 									Duration = 3
 								})
