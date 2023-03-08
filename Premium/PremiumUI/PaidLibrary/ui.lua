@@ -842,7 +842,7 @@ function Library:Create(options)
 					KeySystem["ac"]["TextSize"] = 9
 					KeySystem["ac"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
 					KeySystem["ac"]["Size"] = UDim2.new(1, 0, 1, 0)
-					KeySystem["ac"]["Text"] = [[Copy discord invite]]
+					KeySystem["ac"]["Text"] = [[Discord invite másolása]]
 					KeySystem["ac"]["Font"] = Enum.Font.GothamMedium
 					KeySystem["ac"]["BackgroundTransparency"] = 1
 
