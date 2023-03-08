@@ -718,8 +718,8 @@ function Library:Create(options)
 									KeySystem.CorrectKey = true
 
 									Library:ForceNotify({
-										Name = "KeySystem",
-										Text = "Correct key!",
+										Name = "Prémium Rendszer",
+										Text = "Érvényes Kulcs!",
 										Icon = "rbxassetid://11401835376",
 										Duration = 3
 									})
@@ -727,8 +727,8 @@ function Library:Create(options)
 									KeySystem.Attempts -= 1
 
 									Library:ForceNotify({
-										Name = "KeySystem",
-										Text = "Incorrect key! You still have "..tostring(KeySystem.Attempts).." attempts left!",
+										Name = "Prémium Rendszer",
+										Text = "Érvénytelen Kulcs! "..tostring(KeySystem.Attempts).." próbálkozásod van hátra!",
 										Icon = "rbxassetid://11401835376",
 										Duration = 3
 									})
@@ -737,7 +737,7 @@ function Library:Create(options)
 								KeySystem["a4"]["Text"] = ""
 
 								if KeySystem.Attempts == 0 then
-									game.Players.LocalPlayer:Kick("Too many failed attempts")
+									game.Players.LocalPlayer:Kick("Túl sokszor írtad be, érvénytelen kulcsot!")
 								end
 
 								if KeySystem.KeyTextboxHover then
